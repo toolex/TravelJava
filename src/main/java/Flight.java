@@ -42,4 +42,11 @@ public class Flight {
     }
 
 
+    public int passengerAssigned() {
+        return this.listOfPassengers.size();
+    }
+
+    public void addPassenger(Passenger passenger) {
+        this.listOfPassengers.add(passenger);
+    }
 }
