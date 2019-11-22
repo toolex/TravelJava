@@ -1,16 +1,15 @@
 public class Plane {
-    private Enum PlaneType;
+    private PlaneType plane;
 
-    public Plane(Enum planeType){
-        this.PlaneType = planeType;
+    public Plane(PlaneType plane){
+        this.plane = plane;
     }
 
     public Enum getPlaneType() {
-        return this.PlaneType;
+        return this.plane;
     }
 
     public int findCapacity() {
-        getPlaneType();
-        return getCapacity();
+        return this.plane.getCapacity();
     }
 }
